@@ -1,13 +1,21 @@
+import { createRoot } from 'react-dom/client';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthProvider } from './Components/AuthContext';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+        <AuthProvider>
+          <App />
+        </AuthProvider>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
