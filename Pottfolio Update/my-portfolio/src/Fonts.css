@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'MyCustomFont'; 
+    src: url('../public/Fonts/Brigast.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.name{
+    font-family: 'MyCustomFont', sans-serif;
+}

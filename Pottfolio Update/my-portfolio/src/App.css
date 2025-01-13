@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Iceland&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  background-color: black;
+}
+
+.navbar {
+  transition: all 0.3s ease; 
+}
+
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.375);
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #bbbbbb; 
+}
+
+.navbar-scrolled .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+.links {
+  font-family: 'Bebas Neue', serif;
+  font-weight:500;
+  font-size:x-large;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.container-fluid {
+  background-image: url('/src/images/download\ \(2\).jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items:last baseline;
+  padding: 0 50px;
+  position:relative;
+  color: white; 
+}
+
+.about-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Left side: Large typography */
+.left {
+  flex: 1;
+}
+
+.main-title {
+  font-size: 7rem;
+  line-height: 1;
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.red {
+  color: rgba(255, 0, 0, 0.872);
+  font-size: 4rem;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.description {
+  font-family: 'Bebas Neue', serif;
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.contact-button {
+  float: right;
+  margin-left: 0;
+  background: transparent;
+  border: 2px solid;;
+  color: white;
+  padding: 1px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Bebas Neue', serif;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.contact-button:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 768px) {
+  .container-fluid {
+    background-image: url('/src/images/download\ \(22\).jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position:relative;
+    color: white; 
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: 1;
+    width: 100%;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    font-size: 0.9rem;
+  }
+}
+
+
+#work {
+  background-image: url('/src/images/Download\ premium\ image\ of\ Pastel\ pink\ and\ brown\ backgrounds\ abstract\ texture_\ \ by\ Techi\ about\ wallpaper\,\ backgrounds\,\ abstract\ backgrounds\,\ texture\,\ and\ cloud\ 13009037.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: white; 
+}
+
+#contact {
+  background-image: url('/src/images/download\ \(1\).jpg');
+  background-size: cover;
+  height: 100vh;
+  color: white; 
+}
+
+hr {
+  size: 100ch;
+}
+
