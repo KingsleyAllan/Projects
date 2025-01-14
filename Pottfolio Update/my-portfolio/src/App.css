@@ -81,7 +81,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
 }
 
 .description {
@@ -94,10 +93,9 @@ html {
 
 .contact-button {
   float: right;
-  margin-left: 0;
   background: transparent;
+  margin-left: 0;
   border: 2px solid;;
-  color: white;
   padding: 1px 20px;
   text-transform: uppercase;
   cursor: pointer;
@@ -106,13 +104,6 @@ html {
   font-size: 2rem;
   line-height: 1.8;
 }
-
-.contact-button:hover {
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-
 
 @media (max-width: 768px) {
   .container-fluid {
@@ -126,9 +117,11 @@ html {
     position:relative;
     color: white; 
   }
+
   .about-content {
     flex-direction: column;
   }
+
   .left, .right {
     flex: 1;
     width: 100%;
@@ -147,7 +140,6 @@ html {
   }
 }
 
-
 #work {
   background-image: url('/src/images/Download\ premium\ image\ of\ Pastel\ pink\ and\ brown\ backgrounds\ abstract\ texture_\ \ by\ Techi\ about\ wallpaper\,\ backgrounds\,\ abstract\ backgrounds\,\ texture\,\ and\ cloud\ 13009037.jpg');
   background-size: cover;
@@ -162,7 +154,8 @@ html {
   color: white; 
 }
 
-hr {
-  size: 100ch;
+.social-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
 }
-

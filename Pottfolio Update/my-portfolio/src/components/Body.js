@@ -2,6 +2,12 @@ import React from 'react';
 import "../App.css";
 
 const Body = () => {
+    const handleEmailClick = () => {
+        const email = "kingsleyallan125@gmail.com";
+        const subject = "I am looking for a master of code. Let's talk";
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    };
+    
     return (
         <div className="body">
             <section id="#" className="container-fluid d-flex align-items-center about-section">
@@ -25,7 +31,7 @@ const Body = () => {
                             I am a software developer based in Nairobi, Kenya. I have worked on a wide range of projects each with different programming languages. I love neat and minimal but sometimes I crave brutalist design. I love music, literature, and art.
                         </p>
                         <button className="contact-button rounded-pill">
-                        <a href="#contact"> CONTACT ME</a>
+                        CONTACT ME
                         </button>
                     </div>
                 </div>
@@ -51,7 +57,7 @@ const Body = () => {
                                 <th className='main-title red' scope="col">PROJECTS</th>
                             </tr>
                             </thead>
-                            <hr></hr>
+                            {/* <hr></hr> */}
                             <tbody>
                                 <tr>
                                     <a href='http://drivingnirvana.onlinewebshop.net/' target="_blank" rel="noopener noreferrer" className='description text-decoration-none red'>driving nirvana</a>                            
@@ -65,30 +71,52 @@ const Body = () => {
                     </div>
                 </div>
             </section>
-            <section id="contact" className="container-fluid d-flex align-items-bottom about-section">
-                <div className="about-content">
-                    <div className="left d-lg-block d-none">
-                    <h1 className="main-title">
-                        LET'S <span>CONNECT</span>
-                    </h1>
-                    </div>
-                    <div className="right d-lg-block d-none">
-                    <p className="description">
-                        I am a software developer based in Nairobi, Kenya. I have worked on a wide range of projects each with different programming languages. I love neat and minimal but sometimes I  brutalist design. I love music, literature, and art.
-                    </p>
-                    <button className="contact-button rounded-pill">Contact Me</button>
-                    </div>
-                    <div className="d-lg-none d-block">
-                    <h1 className="main-title">
-                        FULL-STACK <span>SOFTWARE</span> DEVELOPER
-                    </h1>
-                    <p className="description">
-                        I am a software developer based in Nairobi, Kenya. I have worked on a wide range of projects each with different programming languages. I love neat and minimal but sometimes I  brutalist design. I love music, literature, and art.
-                    </p>
-                    <button className="contact-button rounded-pill">Contact Me</button>
-                    </div>
-                </div>
-            </section>
+            <section id="contact" className="container-fluid d-flex p-5 about-section">
+  <div className="about-content">
+    {/* Left Section */}
+    <div className="left d-lg-block d-none me-5">
+      <h1 className="main-title" style={{ fontSize: "10rem" }}>
+        WANT <span>TO </span>START <span>A </span>PROJECT?
+      </h1>
+      <p className="main-title pt-4 ms-5 fs-3">or just say hello</p>
+    </div>
+
+    {/* Right Section */}
+    <div className="right d-lg-block d-none align-items-center">
+      <button className="contact-button rounded-pill mt-5" onClick={handleEmailClick}>
+        kingsleyallan125@gmail.com
+      </button>
+
+      
+      <div className="description social-links mt-t pt-5 ">
+        <a href="https://www.linkedin.com/in/allankingsley/" target="_blank" rel="noopener noreferrer" className="me-3">
+          linkedin
+        </a>
+        <a href="https://github.com/KingsleyAllan" target="_blank" rel="noopener noreferrer" className="me-3">
+          github
+        </a>
+        <a href="https://www.instagram.com/kingsley_i_guess" target="_blank" rel="noopener noreferrer">
+          INSTAGRAM
+        </a>
+      </div>
+    </div>
+
+    {/* Mobile View */}
+    <div className="d-lg-none d-block">
+      <h1 className="main-title">
+        FULL-STACK <span>SOFTWARE</span> DEVELOPER
+      </h1>
+      <p className="description">
+        I am a software developer based in Nairobi, Kenya. I have worked on a wide range of projects each with
+        different programming languages. I love neat and minimal but sometimes I brutalist design. I love music,
+        literature, and art.
+      </p>
+      <button className="contact-button rounded-pill">Contact Me</button>
+    </div>
+  </div>
+</section>
+
+
         </div>
     )    
 }
